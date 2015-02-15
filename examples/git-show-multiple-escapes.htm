@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>    .ansi_bold{font-weight:bold}    .ansi_italic{font-style:italic}    .ansi_console_snippet{font-family:monospace; white-space: pre; display: block;      unicode-bidi: embed; overflow:auto; padding:5px;}    .ansi_console_snippet{        background-color:#222222;        color:#eeeeee;    }    .ansi_fg_black  {color:#222222}    .ansi_fg_red    {color:#dd0000}    .ansi_fg_green  {color:#00cc3e}    .ansi_fg_yellow {color:#eeee00}    .ansi_fg_blue   {color:#0099ff}    .ansi_fg_purple {color:#bb00bb}    .ansi_fg_cyan   {color:#eeeeee}    .ansi_fg_white  {color:#eeeeee}    .ansi_bg_black  {background-color:#222222}    .ansi_bg_red    {background-color:#dd0000}    .ansi_bg_green  {background-color:#00cc3e}    .ansi_bg_yellow {background-color:#eeee00}    .ansi_bg_blue   {background-color:#0099ff}    .ansi_bg_purple {background-color:#bb00bb}    .ansi_bg_cyan   {background-color:#eeeeee}    .ansi_bg_white  {background-color:#eeeeee}    </style></head><body>
+<span class="ansi_console_snippet"><span class="ansi_fg_yellow">commit 79d7715fcecf3a0ab9f1e0a380b5140e03fefcd0</span>
+Author: jakub-g &lt;jakub.g.opensource@gmail.com&gt;
+Date:   Sun Feb 15 03:40:36 2015 +0100
+
+    fix Extra closing escape at EOL breaking stuff
+
+<span class="">diff --git a/examples/git-show.htm b/examples/git-show.htm</span>
+<span class="">new file mode 100644</span>
+<span class="">index 0000000..daa096c</span>
+<span class="">--- /dev/null</span>
+<span class="">+++ b/examples/git-show.htm</span>
+<span class="ansi_fg_cyan">@@ -0,0 +1,29 @@</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;style&gt;    .ansi_bold{font-weight:bold}    .ansi_italic{font-style:italic}    .ansi_console_snippet{font-family:monospace; white-space: pre; display: block;      unicode-bidi: embed; overflow:auto; padding:5px;}    .ansi_console_snippet{        background-color:#222222;        color:#eeeeee;    }    .ansi_fg_black  {color:#222222}    .ansi_fg_red    {color:#dd0000}    .ansi_fg_green  {color:#00cc3e}    .ansi_fg_yellow {color:#eeee00}    .ansi_fg_blue   {color:#0099ff}    .ansi_fg_purple {color:#bb00bb}    .ansi_fg_cyan   {color:#eeeeee}    .ansi_fg_white  {color:#eeeeee}    .ansi_bg_black  {background-color:#222222}    .ansi_bg_red    {background-color:#dd0000}    .ansi_bg_green  {background-color:#00cc3e}    .ansi_bg_yellow {background-color:#eeee00}    .ansi_bg_blue   {background-color:#0099ff}    .ansi_bg_purple {background-color:#bb00bb}    .ansi_bg_cyan   {background-color:#eeeeee}    .ansi_bg_white  {background-color:#eeeeee}    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_console_snippet&quot;&gt;&lt;span class=&quot;ansi_fg_yellow&quot;&gt;commit 64a950282b54aa65eedefbd277e49fdf82f4ecd9&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">Author: jakub-g &amp;lt;jakub.g.opensource@gmail.com&amp;gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">Date:   Sun Feb 15 03:20:37 2015 +0100</span>
+<span class="ansi_fg_green">+</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    0.0.1</span>
+<span class="ansi_fg_green">+</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;&quot;&gt;diff --git a/package.json b/package.json&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;&quot;&gt;index 0c715cb..5cf9e49 100644&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;&quot;&gt;--- a/package.json&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;&quot;&gt;+++ b/package.json&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_cyan&quot;&gt;@@ -1,6 +1,6 @@&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"> {</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &amp;quot;name&amp;quot;: &amp;quot;ansi2html-extended&amp;quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_white ansi_bg_red&quot;&gt;-  &amp;quot;version&amp;quot;: &amp;quot;0.0.0&amp;quot;,&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_green&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;ansi_fg_green&quot;&gt;  &amp;quot;version&amp;quot;: &amp;quot;0.0.1&amp;quot;,&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &amp;quot;description&amp;quot;: &amp;quot;Convert colored console output (ANSI shell escape codes) to HTML.&amp;quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &amp;quot;author&amp;quot;: &amp;quot;Jakub Gieryluk &amp;lt;jakub.g.opensource@gmail.com&amp;gt;&amp;quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &amp;quot;license&amp;quot;: &amp;quot;MIT&amp;quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_cyan&quot;&gt;@@ -31,7 +31,5 @@&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &amp;quot;devDependencies&amp;quot;: {</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">     &amp;quot;jshint&amp;quot;: &amp;quot;2.5.10&amp;quot;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   },</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_white ansi_bg_red&quot;&gt;-  &amp;quot;dependencies&amp;quot;: {&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_white ansi_bg_red&quot;&gt;-  }&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_green&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;ansi_fg_green&quot;&gt;  &amp;quot;dependencies&amp;quot;: {}&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"> }</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;span class=&quot;ansi_fg_white ansi_bg_red&quot;&gt;-&lt;/span&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">&lt;/span&gt;&lt;/body&gt;&lt;/html&gt;</span>
+\ No newline at end of file
+<span class="">diff --git a/examples/git-show.txt b/examples/git-show.txt</span>
+<span class="">new file mode 100644</span>
+<span class="">index 0000000..711e0d9</span>
+<span class="">--- /dev/null</span>
+<span class="">+++ b/examples/git-show.txt</span>
+<span class="ansi_fg_cyan">@@ -0,0 +1,27 @@</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_yellow">commit 64a950282b54aa65eedefbd277e49fdf82f4ecd9</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">Author: jakub-g &lt;jakub.g.opensource@gmail.com&gt;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">Date:   Sun Feb 15 03:20:37 2015 +0100</span>
+<span class="ansi_fg_green">+</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    0.0.1</span>
+<span class="ansi_fg_green">+</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="">diff --git a/package.json b/package.json</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="">index 0c715cb..5cf9e49 100644</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="">--- a/package.json</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="">+++ b/package.json</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_cyan">@@ -1,6 +1,6 @@</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"> {</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &quot;name&quot;: &quot;ansi2html-extended&quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_white ansi_bg_red">-  &quot;version&quot;: &quot;0.0.0&quot;,</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_green">+</span><span class="ansi_fg_green">  &quot;version&quot;: &quot;0.0.1&quot;,</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &quot;description&quot;: &quot;Convert colored console output (ANSI shell escape codes) to HTML.&quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &quot;author&quot;: &quot;Jakub Gieryluk &lt;jakub.g.opensource@gmail.com&gt;&quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &quot;license&quot;: &quot;MIT&quot;,</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_cyan">@@ -31,7 +31,5 @@</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   &quot;devDependencies&quot;: {</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">     &quot;jshint&quot;: &quot;2.5.10&quot;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">   },</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_white ansi_bg_red">-  &quot;dependencies&quot;: {</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_white ansi_bg_red">-  }</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_green">+</span><span class="ansi_fg_green">  &quot;dependencies&quot;: {}</span></span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"> }</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green"><span class="ansi_fg_white ansi_bg_red">-</span></span>
+<span class="">diff --git a/lib/ansi2html.js b/lib/ansi2html.js</span>
+<span class="">index a41a0fa..96345be 100644</span>
+<span class="">--- a/lib/ansi2html.js</span>
+<span class="">+++ b/lib/ansi2html.js</span>
+<span class="ansi_fg_cyan">@@ -81,7 +81,15 @@</span> var footer = &#39;&lt;/body&gt;&lt;/html&gt;&#39;;
+  */
+ function processString (inputString, options) {
+     inputString = options.escapeHtml ? escapeHtml(inputString) : inputString;
+<span class="ansi_fg_white ansi_bg_red">-    return ansispan2(inputString);</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    var str = ansispan2(inputString);</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    var openSpanCount = (str.match(/&lt;span/g) || []).length;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    var closeSpanCount = (str.match(/&lt;\/span/g) || []).length;</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    if (closeSpanCount &gt; openSpanCount) {</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">        // we may have extra closing escape sequence at the end of the line</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">        // that doesn&#39;t really close anything</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">        str = str.replace(/&lt;\/span&gt;$/, &quot;&quot;);</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    }</span>
+<span class="ansi_fg_green">+</span><span class="ansi_fg_green">    return str;</span>
+ }
+ 
+ /**
+</span></body></html>
