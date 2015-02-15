@@ -1,0 +1,27 @@
+[33mcommit 64a950282b54aa65eedefbd277e49fdf82f4ecd9[m
+Author: jakub-g <jakub.g.opensource@gmail.com>
+Date:   Sun Feb 15 03:20:37 2015 +0100
+
+    0.0.1
+
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 0c715cb..5cf9e49 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -1,6 +1,6 @@[m
+ {[m
+   "name": "ansi2html-extended",[m
+[37;41m-  "version": "0.0.0",[m
+[32m+[m[32m  "version": "0.0.1",[m
+   "description": "Convert colored console output (ANSI shell escape codes) to HTML.",[m
+   "author": "Jakub Gieryluk <jakub.g.opensource@gmail.com>",[m
+   "license": "MIT",[m
+[36m@@ -31,7 +31,5 @@[m
+   "devDependencies": {[m
+     "jshint": "2.5.10"[m
+   },[m
+[37;41m-  "dependencies": {[m
+[37;41m-  }[m
+[32m+[m[32m  "dependencies": {}[m
+ }[m
+[37;41m-[m
