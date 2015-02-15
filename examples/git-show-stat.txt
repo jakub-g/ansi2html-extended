@@ -1,0 +1,18 @@
+[33mcommit 462478d938b205224b337aabbe57913fed264d66[m
+Author: jakub-g <jakub.g.opensource@gmail.com>
+Date:   Sun Feb 15 01:23:09 2015 +0100
+
+    Initial commit
+
+ .gitattributes              |   1 [32m+[m
+ .gitignore                  |   1 [32m+[m
+ .travis.yml                 |   5 [32m++[m
+ LICENSE                     |  21 [32m++++++[m
+ README.md                   | 155 [32m+++++++++++++++++++++++++++++++++++++++[m
+ bin/ansi2html               |  17 [32m+++++[m
+ examples/git-show-stat.html |  20 [32m+++++[m
+ examples/git-show-stat.txt  |  18 [32m+++++[m
+ lib/ansi2html.js            | 173 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ lib/ansispan2.js            |  73 [32m+++++++++++++++++++[m
+ package.json                |  37 [32m++++++++++[m
+ 11 files changed, 521 insertions(+)

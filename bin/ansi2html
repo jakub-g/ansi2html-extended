@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var a2h = require('../lib/ansi2html');
+a2h.fromStream({
+    standalone: true,
+    escapeHtml: true,
+    palette: {
+        black: '#222222',
+        white: '#eeeeee',
+        red:   '#dd0000',
+        green: '#00cc3e',
+        blue:  '#0099ff',
+        yellow:'#eeee00',
+        purple:'#bb00bb',
+        cyan:  '#eeeeee'
+    }
+});
