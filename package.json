@@ -1,6 +1,6 @@
 {
   "name": "ansi2html-extended",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Convert colored console output (ANSI shell escape codes) to HTML.",
   "author": "Jakub Gieryluk <jakub.g.opensource@gmail.com>",
   "license": "MIT",
