@@ -3,6 +3,8 @@
 
  [![Get it on npm](https://nodei.co/npm/ansi2html-extended.png?compact=true)](https://www.npmjs.org/package/ansi2html-extended)
 
+**Note that this module is a work in progress. It may contain bugs and not work cross-platform.**
+
 This module, written in JavaScript, is an extended fork of [https://github.com/mmalecki/ansispan](ansispan).
 It converts an input string with ANSI escape codes (for colored console output etc.) into its
 HTML equivalent. It can be used either as a nodejs module, or as a command-line utility.
@@ -152,4 +154,4 @@ The following options are used when `a2h` is invoked from command line:
 
 ## License
 
-MIT © [Jakub Gieryluk](http://jakub-g.github.io)
+MIT Â© [Jakub Gieryluk](http://jakub-g.github.io)
