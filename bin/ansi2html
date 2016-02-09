@@ -1,5 +1,17 @@
 #!/usr/bin/env node
 
+if (process.argv[2] == '--version') {
+    var pkgJson = require('../package.json');
+    console.log(pkgJson.version);
+    process.exit(0);
+}
+
+if (process.stdin.isTTY) {
+    console.log('Usage:');
+    console.log('  yourcommand --color | a2h > output.html');
+    process.exit(1);
+}
+
 var a2h = require('../lib/ansi2html');
 a2h.fromStream({
     standalone: true,
